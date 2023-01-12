@@ -36,6 +36,10 @@
             text-align: right;
         }
 
+        tbody > tr:nth-child(2n -1) {
+            background-color: aqua;
+        }
+
     </style>
 </head>
 <body>
@@ -56,8 +60,8 @@
         <caption>População da Unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
 
         </thead>
@@ -82,7 +86,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>0000</strong></td>
             </tr>
 
